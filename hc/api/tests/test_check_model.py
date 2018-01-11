@@ -30,8 +30,6 @@ class CheckModelTestCase(TestCase):
         self.assertEqual(check.get_status(), "up")
 
         # The above 2 asserts fail. Make them pass
-        # Test passes and is correct, check falls outside grace period after
-        # 1 day and 1 hour. Here it's still within grace period
 
     def test_paused_check_is_not_in_grace_period(self):
         check = Check()
